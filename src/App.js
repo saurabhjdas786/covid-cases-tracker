@@ -11,18 +11,21 @@ import { fetchData } from "./api";
 
 function App() {
   const [data, setData] = useState({});
+  const [selectedCountry, setSelectedCountry] = useState("");
 
   useEffect(() => {
     (async () => {
-      setData(await fetchData());
+      setData(await fetchData(selectedCountry));
     })();
-  }, []);
+  }, [selectedCountry]);
+
+  useEffect(() => {}, [selectedCountry]);
 
   return (
     <div className={styles.container}>
       <Cards {...data} />
-      <CountryPicker />
-      <Chart />
+      <CountryPicker setSelectedCountry={setSelectedCountry} />
+      <Chart {...data} selectedCountry={selectedCountry} />
     </div>
   );
 }
