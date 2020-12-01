@@ -1,0 +1,10 @@
+body {
+  font-family: "Fira Code", sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
