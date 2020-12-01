@@ -21,8 +21,8 @@ function App() {
   return (
     <div className={styles.container}>
       <Cards {...data} />
-      <Chart />
       <CountryPicker />
+      <Chart />
     </div>
   );
 }
