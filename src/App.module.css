@@ -1,6 +1,8 @@
 body {
   font-family: "Fira Code", sans-serif;
   font-size: 2rem;
+  /* background: #272727;
+  color: #fff; */
 }
 
 .container {
@@ -8,4 +10,20 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.coronaBanner {
+  width: 70%;
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .coronaBanner {
+    width: 100%;
+    margin: 0 0;
+  }
 }

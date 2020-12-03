@@ -6,6 +6,6 @@
 }
 
 .formControl {
-  width: 30%;
+  width: max-content;
   margin-bottom: 30px;
 }
